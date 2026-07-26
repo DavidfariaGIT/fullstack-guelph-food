@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-guelph-food",
+  "version": "1.0.0",
+  "description": "guelph food fullstack project",
+  "homepage": "https://github.com/DavidfariaGIT/fullstack-guelph-food#readme",
+  "bugs": {
+    "url": "https://github.com/DavidfariaGIT/fullstack-guelph-food/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidfariaGIT/fullstack-guelph-food.git"
+  },
+  "license": "ISC",
+  "author": "david faria",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
