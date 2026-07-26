@@ -1,7 +1,16 @@
 import express from 'express'
+import { apiRouter } from './routes/getRouter.js'
+
 
 const PORT = 8000
-
 const app = express()
 
-app.listen(PORT, () => console.log(`server connected on port ${PORT}`))
+app.use(express.static('public')) 
+
+app.use('/api', apiRouter)
+
+app.listen(PORT, () => { 
+  console.log(`Server running at http://localhost:${PORT}`)
+}).on('error', (err) => {
+  console.error('Failed to start server:', err)
+}) 
