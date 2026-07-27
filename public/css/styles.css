@@ -71,3 +71,7 @@ h2 {
     opacity: 30%;
     margin-left: 1.6em;
 }
+
+#rest-wrapper {
+    width: 90%;
+}

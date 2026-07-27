@@ -1,5 +1,5 @@
-export async function getRestaruants() {
+export async function getRestaurants() {
     const res = await fetch(`/api`)
     const data = await res.json()
-    console.log(data)
+    return data
 }
