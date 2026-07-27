@@ -1,0 +1,73 @@
+body {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #606c38;
+  background-color: #fbfaf2;
+}
+
+
+/* header */
+header {
+    max-width: 550px;
+    height: 35em; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px;
+
+}
+
+.hero-text-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 3em; 
+    text-align: right;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.divider {
+    width: 95vw;
+    height: 3px;
+    background-color: #606c38;
+}
+
+.food-icon {
+    width: 4em;
+    height: 4em;
+    margin-top: 2em;
+    mix-blend-mode: difference;
+}
+
+.background-image {
+    width: 70vw;
+    height: 80%;
+    background-image: url('.././images/guelph.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* main */
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-left: 1.8em;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+}
+
+.main-divider {
+    width: 55vw;
+    height: 1.5px;
+    background-color: #606c38;
+    opacity: 30%;
+    margin-left: 1.6em;
+}
