@@ -92,7 +92,8 @@ h3 {
 }
 
 #rest-wrapper {
-    width: 100%;
+    width: 94vw;
+    box-sizing: border-box;
     margin-left: 1.6em;
     margin-top: 2em;
 }

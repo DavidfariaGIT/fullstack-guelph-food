@@ -6,5 +6,5 @@ import { handleFilter } from '../controllers/handleFilter.js'
 export const apiRouter = express.Router()
 
 apiRouter.get('/', handleGet)
-apiRouter.get('/restaurants/type', handleFilter)
+apiRouter.get('/type', handleFilter)
 

@@ -8,7 +8,6 @@ app.use(express.static('public'))
 
 app.use('/api', apiRouter)
 app.use('/api/restaurants', apiRouter)
-app.use('/api/restaurants/type', apiRouter)
 
 
 app.listen(PORT, () => { 
