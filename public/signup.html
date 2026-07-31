@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="inner-form">
+          <h2 id="form-title">Sign Up</h2>
+          <label for="signup-name">Full Name</label>
+          <input type="text" id="signup-name" name="name" required />
+
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" name="email" required />
+
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="signup-username"
+            name="username"
+            pattern="^[a-zA-Z0-9_\-]{1,20}$"
+            title="Username must be 1–20 characters and can only include letters, numbers, underscores (_), or hyphens (-)."
+            required
+          />
+
+          <label for="signup-password">Password</label>
+          <input
+            type="password"
+            id="signup-password"
+            name="password"
+            required
+          />
+
+          <button type="submit" class="form-btn">Create Account</button>
+          <p>
+            Already registered?
+            <a href="/login.html" class="sign-link">Sign in here</a>.
+          </p>
+          <p id="error-message" class="error"></p>
+        </div>
+      </form>
+    </main>
+
+    <script src="js/signUp.js" type="module"></script>
+  </body>
+</html>
