@@ -12,7 +12,7 @@ export async function handleGet(req, res) {
     const { filter } = req.query;
 
     if (filter) {
-      query += 'WHERE type = ?'
+      query += ' WHERE type = ? '
       params.push(filter)
     }
 
