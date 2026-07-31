@@ -1,6 +1,5 @@
 
 export function renderRestaurants(restaurants) {
-console.log(restaurants)
 const restContainer = document.getElementById('rest-wrapper')
    const cards = restaurants.map((rest) => {
    return `
