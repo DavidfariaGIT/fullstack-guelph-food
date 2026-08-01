@@ -2,7 +2,7 @@ import { getRestaurants } from "./getRestaurants.js";
 import { renderRestaurants } from "./renderRestaurants.js";
 import { getFilters } from "./getFilters.js";
 import { filterRestaurants } from "./filterRestaurants.js";
-import { registerUser } from "./registerUser.js";
+import { checkAuth, renderGreet } from "./authUI.js";
 
 const btnEl = document.getElementById('log-in-btn')
 
@@ -10,6 +10,9 @@ async function init() {
   const restaurants = await getRestaurants();
   renderRestaurants(restaurants);
   getFilters();
+  const name = await checkAuth()
+  renderGreet(name)
+
 }
 
 init();
