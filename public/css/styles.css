@@ -20,6 +20,21 @@ header {
     padding: 20px;
 }
 
+.log-in-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 2em;
+    padding-top: 0.5em;
+
+}
+
+.greet-text {
+    font-size: 0.75rem;
+}
+
+
+
 #log-in-btn {
     background-image: url('/images/log-in.png');
     background-position: center;
