@@ -197,3 +197,44 @@ label {
 .sign-link {
     color: #bc6c25;
 }
+
+/* login form */
+
+.login-main {
+    display: flex;
+    justify-content: center;
+}
+
+.login-title {
+    color: #283618;
+}
+
+.login-form {
+    margin-top: 5em;
+    width: 85%;
+}
+
+.login-inner {
+    background-color: #bc6c25;
+    color: #fefae0;
+}
+
+/* logout */
+
+.footer-wrapper {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 2em;
+    margin-right: 0.5em;
+}
+
+#logout-btn {
+    background-color: #bc6c25;
+    color: #fefae0;
+    width: 200px;
+    border: none;
+    font-weight: 800;
+    font-size: 1em;
+    padding: 5px;
+    display: none;
+}
