@@ -2,9 +2,11 @@ import { getRestaurants } from "./getRestaurants.js";
 import { renderRestaurants } from "./renderRestaurants.js";
 import { getFilters } from "./getFilters.js";
 import { filterRestaurants } from "./filterRestaurants.js";
-import { checkAuth, renderGreet } from "./authUI.js";
+import { checkAuth, renderGreet, renderLogout } from "./authUI.js";
+import { logout } from "./logout.js";
 
 const btnEl = document.getElementById('log-in-btn')
+const logoutEl = document.getElementById('logout-btn')
 
 async function init() {
   const restaurants = await getRestaurants();
@@ -12,7 +14,7 @@ async function init() {
   getFilters();
   const name = await checkAuth()
   renderGreet(name)
-
+  renderLogout(name)
 }
 
 init();
@@ -24,3 +26,4 @@ select.addEventListener("change", async (e) => {
   renderRestaurants(filteredRest)
 });
 
+logoutEl.addEventListener('click', logout)
