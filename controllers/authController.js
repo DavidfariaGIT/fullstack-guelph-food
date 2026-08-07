@@ -25,7 +25,7 @@ export async function registerUser(req, res) {
   }
 
   try {
-    const db = await getDBConnection();
+    const db = await getDBConnection()
 
     const existing = await db.get(
       `SELECT id FROM users WHERE email = ? AND username = ?`,
@@ -43,7 +43,7 @@ export async function registerUser(req, res) {
             INSERT INTO users (name, email, username, password)
             VALUES(?, ?, ?, ?)`,
       [name, email, username, hashed],
-    );
+    )
 
     req.session.userId = result.lastID;
 

@@ -11,6 +11,7 @@ const PORT = 8000
 const app = express()
 const secret = process.env.SPIRAL_SESSION_SECRET 
 
+
 app.use(express.static('public')) 
 app.use(express.json())
 

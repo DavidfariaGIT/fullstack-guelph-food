@@ -14,7 +14,7 @@ formEl.addEventListener('submit', async (e) => {
    
     try {
         const res = await fetch('api/auth/register', {
-            method: "Post",
+            method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             }, 

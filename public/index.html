@@ -1,38 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="log-in-wrapper">
-    <p id="greeting"></p>
-    <button onclick='window.location.href="signup.html"' id="log-in-btn"></button>
+      <p id="greeting"></p>
+      <button
+        onclick="window.location.href = 'signup.html'"
+        id="log-in-btn"
+      ></button>
     </div>
     <header>
-    <div class="background-image"></div>
-    <div class="divider"></div>
-    <div class="hero-text-wrapper">
-    <img class="food-icon" src="images/food-icon.png"/>
-    <h1>Guelph <br> food <br> server</h1>
-    </div>
-</header>
-<main>
-    <h2>Restaurants</h2>
-    <div class="main-divider"></div>
-    <select id="rest-type" name="type">
-    </select>
-    <div id="rest-wrapper"></div>
-</main>
-<footer>
-    <div class="footer-wrapper">
-        <button id="logout-btn">Logout</button>
-    </div>
-</footer>
+      <div class="background-image"></div>
+      <div class="divider"></div>
+      <div class="hero-text-wrapper">
+        <img class="food-icon" src="images/food-icon.png" />
+        <h1>
+          Guelph <br />
+          food <br />
+          server
+        </h1>
+      </div>
+    </header>
+    <main>
+      <h2>Restaurants</h2>
+      <div class="main-divider"></div>
+      <select id="rest-type" name="type"></select>
+      <div id="rest-wrapper"></div>
 
-    
+      <form class="add-rest-form">
+        <div class="inner-form">
+          <h4>add a new restaurant</h4>
+          <label for="name"></label>
+          <input
+            type="text"
+            id="restaurant-name"
+            name="name"
+            placeholder="restaurant name"
+            required
+          />
+
+          <label for="address"></label>
+          <input
+            type="text"
+            id="restaurant-address"
+            name="address"
+            placeholder="restaurant address"
+            required
+          />
+          <label for="type"></label>
+          <input
+            type="text"
+            id="restaurant-type"
+            name="type"
+            placeholder="restaurant type"
+          />
+          <label for="price"></label>
+          <input
+            type="number"
+            id="restaurant-price"
+            name="price"
+            placeholder="restaurant price"
+            min="1"
+            max="5"
+            required
+          />
+          <button type="submit">Add new restaurant</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <button class="add-btn">Add a restaurant</button>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </footer>
+
     <script src="js/index.js" type="module"></script>
-</body>
+  </body>
 </html>
